@@ -1,15 +1,14 @@
 import Chart from "chart.js/auto";
 // import config from './config.js'
 // import data from './data.js'
-import "hammerjs";
-import zoomPlugin from "chartjs-plugin-zoom";
+// import "hammerjs";
+// import zoomPlugin from "chartjs-plugin-zoom";
 import data from "./data.js";
 
-Chart.register(zoomPlugin);
-
+// Chart.register(zoomPlugin);
 window.onload = function () {
   // console.log(data["x"]);
-  const x = data["x"];
+  // const x = data["x"];
 
   var myChart = new Chart(document.getElementById("acquisitions"), {
     type: "line",
