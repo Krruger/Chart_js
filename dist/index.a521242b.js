@@ -543,13 +543,8 @@ var _chartjsPluginZoomDefault = parcelHelpers.interopDefault(_chartjsPluginZoom)
 var _dataJs = require("./data.js");
 var _dataJsDefault = parcelHelpers.interopDefault(_dataJs);
 (0, _autoDefault.default).register((0, _chartjsPluginZoomDefault.default));
-const fetchAsync = async ()=>{
-    const response = await fetch("data.json"), keyValues = await response.json();
-    return keyValues;
-};
-console.log(fetchAsync().then);
 window.onload = function() {
-    console.log((0, _dataJsDefault.default)["x"]);
+    // console.log(data["x"]);
     const x = (0, _dataJsDefault.default)["x"];
     var myChart = new (0, _autoDefault.default)(document.getElementById("acquisitions"), {
         type: "line",
@@ -607,21 +602,21 @@ window.onload = function() {
     myChart.update();
 }; // "build": "parcel build public/index.html --public-url ./"
 
-},{"chart.js/auto":"3CW91","hammerjs":"lHwvQ","chartjs-plugin-zoom":"kMtu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./data.js":"9kapS"}],"3CW91":[function(require,module,exports) {
-const chartjs = require("9fb807b31c0918e3");
+},{"chart.js/auto":"3CW91","hammerjs":"lHwvQ","chartjs-plugin-zoom":"kMtu7","./data.js":"9kapS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3CW91":[function(require,module,exports) {
+const chartjs = require("f749e300ac49649c");
 const { Chart , registerables  } = chartjs;
 Chart.register(...registerables);
 module.exports = Object.assign(Chart, chartjs);
 
-},{"9fb807b31c0918e3":"fFtYf"}],"fFtYf":[function(require,module,exports) {
+},{"f749e300ac49649c":"fFtYf"}],"fFtYf":[function(require,module,exports) {
 /*!
  * Chart.js v4.1.2
  * https://www.chartjs.org
  * (c) 2023 Chart.js Contributors
  * Released under the MIT License
  */ "use strict";
-var helpers_segment = require("2b31cde323aa43b6");
-require("774d1e2f86bc5862");
+var helpers_segment = require("5067a36ae11fa2ee");
+require("a7301e9bd4ee48dc");
 class Animator {
     constructor(){
         this._request = null;
@@ -10709,14 +10704,14 @@ exports.registerables = registerables;
 exports.registry = registry;
 exports.scales = scales; //# sourceMappingURL=chart.cjs.map
 
-},{"2b31cde323aa43b6":"auKte","774d1e2f86bc5862":"2aojw"}],"auKte":[function(require,module,exports) {
+},{"5067a36ae11fa2ee":"auKte","a7301e9bd4ee48dc":"2aojw"}],"auKte":[function(require,module,exports) {
 /*!
  * Chart.js v4.1.2
  * https://www.chartjs.org
  * (c) 2023 Chart.js Contributors
  * Released under the MIT License
  */ "use strict";
-var color$1 = require("40335fb05dfd0965");
+var color$1 = require("10c785afd2a6a98b");
 /**
  * @namespace Chart.helpers
  */ /**
@@ -13144,7 +13139,7 @@ exports.unclipArea = unclipArea;
 exports.unlistenArrayEvents = unlistenArrayEvents;
 exports.valueOrDefault = valueOrDefault; //# sourceMappingURL=helpers.segment.cjs.map
 
-},{"40335fb05dfd0965":"2aojw"}],"2aojw":[function(require,module,exports) {
+},{"10c785afd2a6a98b":"2aojw"}],"2aojw":[function(require,module,exports) {
 /*!
  * @kurkle/color v0.3.2
  * https://github.com/kurkle/color#readme
@@ -16731,17 +16726,17 @@ var plugin = {
 };
 
 },{"hammerjs":"lHwvQ","chart.js/helpers":"6htYF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6htYF":[function(require,module,exports) {
-module.exports = require("710d291a20788f4c");
+module.exports = require("63382849ab4c0cef");
 
-},{"710d291a20788f4c":"9rOOz"}],"9rOOz":[function(require,module,exports) {
+},{"63382849ab4c0cef":"9rOOz"}],"9rOOz":[function(require,module,exports) {
 /*!
  * Chart.js v4.1.2
  * https://www.chartjs.org
  * (c) 2023 Chart.js Contributors
  * Released under the MIT License
  */ "use strict";
-var helpers_segment = require("be285cc7cbb213d0");
-require("64660ac8a64f7550");
+var helpers_segment = require("63961d745c02726a");
+require("796cd804c2a36aae");
 exports.HALF_PI = helpers_segment.HALF_PI;
 exports.INFINITY = helpers_segment.INFINITY;
 exports.PI = helpers_segment.PI;
@@ -16864,7 +16859,7 @@ exports.unclipArea = helpers_segment.unclipArea;
 exports.unlistenArrayEvents = helpers_segment.unlistenArrayEvents;
 exports.valueOrDefault = helpers_segment.valueOrDefault; //# sourceMappingURL=helpers.cjs.map
 
-},{"be285cc7cbb213d0":"auKte","64660ac8a64f7550":"2aojw"}],"9kapS":[function(require,module,exports) {
+},{"63961d745c02726a":"auKte","796cd804c2a36aae":"2aojw"}],"9kapS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 data = {
